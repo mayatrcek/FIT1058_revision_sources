@@ -19,12 +19,12 @@ def eea(m, n):
         q = a // b
 
         # Update the triples:
-
         new_a, new_x, new_y = b, z, w
 
         # (a, x, y) - q * (b, z, w)
         new_b, new_z, new_w = a - q * b, x - q * z, y - q * w
 
+        # Replacing to avoid data loss
         a, x, y = new_a, new_x, new_y
         b, z, w = new_b, new_z, new_w
 
@@ -40,4 +40,5 @@ def eea(m, n):
 m = int(input("\nEnter m: "))
 n = int(input("Enter n: "))
 
-gcd = eea(m, n)
+# Activate the function
+eea(m, n)
