@@ -1,4 +1,7 @@
+
 # EEA --> gcd(m,n) = xm + yn.
+# This is build upon course material from 1058
+
 def eea(m, n):
 
     # First ensure m >= n.
